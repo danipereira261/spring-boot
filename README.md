@@ -2,7 +2,7 @@
 
 ###Introdução
 
-Este projeto de um Fórum de dúvidas Spring Boot API REST com segurança, cache e monitoramento.
+Este projeto é um Fórum de dúvidas Spring Boot API REST com segurança, cache e monitoramento.
 
 #### Dependencias de software
 
