@@ -4,6 +4,7 @@ import br.com.alura.forum.model.Topico;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -25,7 +26,7 @@ public class TopicoDto {
         this.dataCriacao = topico.getDataCriacao();
     }
 
-    public static List<TopicoDto> converter(List<Topico> topicos) {
-        return topicos.stream().map(TopicoDto::new).collect(Collectors.toList());
+    public static Page<TopicoDto> converter(Page<Topico> topicos) {
+        return topicos.map(TopicoDto::new);
     }
 }
